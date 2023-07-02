@@ -1,0 +1,255 @@
+/* 
+    Created on : 2/07/2023, 12:28:34 p. m.
+    Author     : LEONEL
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.header{
+    background-color: rgba(106, 153, 78);
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title{
+    color: #f2e8cf;
+    font-size: 25px;
+    font-weight: 800;
+}
+.navbar{
+    position: relative;
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #f2e8cf;
+    display: block;
+    font-weight: 600;
+}
+.menu .navbar ul li a:hover{
+    color: #386641;
+}
+#ico-menu{
+    display: none;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.ico-menu{
+    width: 25px;
+}
+.header-conten{
+    text-align: center;
+}
+.header-conten h1{
+    margin-bottom: 35px;
+    color: #edf6f9;
+    font-size: 45px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 70px
+}
+.header-conten p{
+    font-size: 18px;
+    color: #edf6f9;
+    padding: 0px 250px;
+    margin-bottom: 35px;
+}
+.btn-f{
+    display: inline-block;
+    background-color: #f2e8cf;
+    padding: 10px 20px;
+    color: #386641;
+}
+.btn-f:hover{
+    background-color: #A7C957;
+}
+.servicios{
+    padding: 100px 0px;
+    background-color: #e1e2e6;
+}
+.servicios-content{
+    text-align: center;
+}
+.servicios-content h2{
+    font-size: 35px;
+    color: #386641;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+.txt-parf{
+    font-size: 18px;
+    padding: 0px 250px;
+    margin-bottom: 45px;
+}
+.servicos-grupos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.servicio-1{
+    padding: 0px 25px;
+}
+.servicio-1 img{
+    width: 250px;
+}
+.btn-1{
+    display: inline-block;
+    background-color: #386641;
+    padding: 10px 20px;
+    color: #edf6f9;
+}
+.btn-1:hover{
+     background-color: #A7C957;
+}
+.producto{
+    background-color: #edf6f9;
+     padding: 100px 0px;    
+}
+.producto-conten{
+    text-align: center;
+}
+.producto-conten h2{
+    font-size: 45px;
+    color: #386641;
+}
+.producto-detalle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.cont-detalle{
+    width: 50%;
+    padding: 0px 100px;
+}
+.cont-detalle img{
+  width: 500px;
+  height: 400px;
+}
+.title-detalle{
+    color: #386641;
+    margin-bottom: 25px;
+}
+.cont-detalle ul li{
+    margin-bottom: 20px;
+}
+.footer{
+    background-color: #386641;
+    padding: 20px 100px;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.link{
+    padding: 20px;
+}
+.link h3{
+    color: #edf6f9;
+}
+.link ul li{
+    padding: 10px;
+    color: #edf6f9;
+}
+.activate{
+    display: initial;
+}
+@media(max-width:999px){
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    #ico-menu{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #A7C957;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    .header{
+        min-width: 0vh;
+    }
+    .header-conten{
+        padding: 100px 20px;
+    }
+    .header-conten h1{
+        font-size: 35px;
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+    .header-conten p{
+        font-size: 16px;
+        padding: 0px;
+    }
+    .servicios-content{
+        padding: 50px 0px;
+    }
+    .servicios-content h2{
+        padding: 20px 0px;        
+    }
+    .txt-parf{
+        padding: 0px;
+    }
+    .servicos-grupos {
+        flex-direction: column;
+    }
+    .servicio-1{
+        margin-bottom: 20px;
+    }
+    .producto-conten{
+        padding: 30px 0px;
+    }
+    .producto-detalle{
+        flex-direction: column;
+    }
+    .cont-detalle img{
+        width: 300px;
+    }
+    .cont-detalle h3{
+        display: none;
+    }
+    .cont-detalle ul li{
+       display: none;
+    }
+    .footer-content{
+        flex-direction: column;
+    }
+}
